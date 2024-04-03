@@ -8,7 +8,6 @@ package tokenfactory
 
 import (
 	context "context"
-
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -70,7 +69,6 @@ func (c *msgClient) UpdateDenom(ctx context.Context, in *MsgUpdateDenom, opts ..
 	}
 	return out, nil
 }
-
 
 // MsgServer is the server API for Msg service.
 // All implementations must embed UnimplementedMsgServer
@@ -163,7 +161,6 @@ func _Msg_UpdateDenom_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	return interceptor(ctx, in, info, handler)
 }
-
 
 // Msg_ServiceDesc is the grpc.ServiceDesc for Msg service.
 // It's only intended for direct use with grpc.RegisterService,
